@@ -10,6 +10,7 @@ body {
     margin: 1.5rem;
     display: flex;
     justify-content: center;
+    padding-bottom: 100px;
 }
 
 /* Common end */
@@ -714,4 +715,34 @@ body {
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-size: 15px;
+}
+
+.current-event{
+    width: 50vh;
+    height: 60vh;
+}
+
+.current{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.blink {
+    animation: blinker 0.5s linear infinite;
+    color: rgb(3, 244, 63);
+    font-size: 30px;
+    cursor: pointer;
+
+    list-style: none;
+}
+@keyframes blinker {
+    30% {
+        opacity: 0;
+    }
+}
+
+.reg-link{
+    text-decoration: none;
 }
